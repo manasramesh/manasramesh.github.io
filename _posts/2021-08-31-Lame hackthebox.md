@@ -1,3 +1,10 @@
+---
+title: LAME HACKTHEBOX
+date: 2021-08-31 10:30:00 +/-TTTT
+categories: [Linux, OSCP, HACKING]
+tags: [hacking, linux, oscp, hackthebox]     # TAG names should always be lowercase
+---
+
 
 ### Lame — HackTheBox
 
