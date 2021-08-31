@@ -1,3 +1,12 @@
+---
+title: BOB VULNHUB
+date: 2021-08-31 12:30:00 +/-TTTT
+categories: [Linux, Hacking, OSCP]
+tags: [linux, oscp, hacking, vulnhub]     # TAG names should always be lowercase
+---
+
+
+
 
 ### **BOB Vulnhub — OSCP_DAY-1**
 
