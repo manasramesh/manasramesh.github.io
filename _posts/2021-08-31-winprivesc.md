@@ -2,7 +2,7 @@
 title: WINDOWS PRIVILEAGE ESCALATION
 date: 2021-08-30 20:30:00 +/-TTTT
 categories: [WINDOWS, PRIVILEAGE ESCALATION]
-tags: [PRIV ESC]     # TAG names should always be lowercase
+tags: [windows, privileage escalation, pentesting, oscp]     # TAG names should always be lowercase
 ---
 
 
