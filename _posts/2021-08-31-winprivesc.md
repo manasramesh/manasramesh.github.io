@@ -10,8 +10,6 @@ tags: [windows, privileage escalation, pentesting, oscp]     # TAG names should 
 ### Windows Privilege Escalation
 
 
-[**FOLLOW : MANAS RAMESH - Freelance - Bugcrowd | LinkedIn**  
-](https://www.linkedin.com/in/manas-ramesh-9a7ba4149 "https://www.linkedin.com/in/manas-ramesh-9a7ba4149")
 
 This is my OSCP Windows privilege escalations notes. The contents are taken from the @tibsec’s udemy course. All credits go to him. Let’s begin.
 
