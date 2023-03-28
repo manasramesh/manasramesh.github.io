@@ -67,7 +67,7 @@ tags: [WEB,OWASP,TESTING,SECURITY]     # TAG names should always be lowercase
 
 
 ### <a name="Authentication">Authentication</a>
-- [ ] Test for user enumeration
+- [ ] [Test for user enumeration]
 - [ ] Test for authentication bypass
 - [ ] Test for bruteforce protection
 - [ ] Test password quality rules
@@ -253,3 +253,15 @@ Source: [OWASP](https://www.owasp.org/index.php/Web_Application_Security_Testing
 - [ ] Test for XSS vulnerabilities in any mobile-specific features or APIs used by the login page.
 
 
+
+### <a name="Test for user enumeration">HTML 5</a>
+
+- [ ] Verify if the error messages shown on the login page differ for valid and invalid usernames. If the error message is different for a valid username and an invalid username, an attacker can determine whether a username is valid or not. You can use tools like Burp Suite to automate this process.
+- [ ] Attempt to login with common usernames and observe whether the response differs for valid and invalid usernames. You can use a tool like Burp Suite or a web browser's developer console to capture the login requests and responses.
+- [ ] Check whether the password reset feature reveals whether a username is valid or not. If the password reset feature reveals that a username is valid, an attacker can use this information to launch a brute force attack on the login page.
+- [ ] Check the user registration page for any indication of valid usernames, such as a list of already registered users or a search feature that allows users to search for other users.
+- [ ] Use a tool like DirBuster or DirSearch to brute-force the web application's directories and files. This can reveal hidden login pages and directories that are not visible to normal users.
+- [ ] Check for differences in the response times for valid and invalid usernames. If the response time is different, it could indicate that the web application is performing an additional check to determine whether the username is valid or not.
+- [ ] Attempt to login with a large number of randomly generated usernames to see if there is a pattern in the response. If there is a pattern, it could indicate that the web application is vulnerable to user enumeration attacks.
+- [ ] Check the HTML source code of the login page for any hidden fields that may reveal information about valid usernames or user IDs.
+- [ ] Analyze the network traffic using a tool like Wireshark to look for any patterns or differences in the response for valid and invalid usernames.
