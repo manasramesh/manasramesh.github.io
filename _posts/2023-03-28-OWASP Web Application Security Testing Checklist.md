@@ -23,7 +23,8 @@ tags: [WEB,OWASP,TESTING,SECURITY]     # TAG names should always be lowercase
 * [Risky Functionality - File Uploads](#File)
 * [Risky Functionality - Card Payment](#Card)
 * [HTML 5](#HTML)
-* [WAF Detection](#WAF Detection)
+* [WAF Detection](#waf-detection)
+
 
 -------
 ### <a name="Information">Information Gathering</a>
