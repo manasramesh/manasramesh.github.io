@@ -67,7 +67,7 @@ tags: [WEB,OWASP,TESTING,SECURITY]     # TAG names should always be lowercase
 
 
 ### <a name="Authentication">Authentication</a>
-- [ ] * [Test for user enumeration](#test-for-user-enumeration)
+- [ ] [Test for user enumeration](#test-for-user-enumeration)
 - [ ] Test for authentication bypass
 - [ ] Test for bruteforce protection
 - [ ] Test password quality rules
