@@ -85,7 +85,7 @@ tags: [WEB,OWASP,TESTING,SECURITY]     # TAG names should always be lowercase
 - [ ] Test for consistent authentication across applications with shared authentication schema / SSO
 - [ ] Inputs from ChatGPT :- 
   - Test for SQL injection vulnerabilities in login pages.
-  - Test for cross-site scripting (XSS) vulnerabilities in login pages.
+  - * [Test for cross-site scripting (XSS) vulnerabilities in login pages](#Information) 
   - Test for directory traversal vulnerabilities in login pages.
   - Test for brute force attacks on login pages.
   - Test for weak password policies or controls in the login process.
@@ -222,3 +222,34 @@ tags: [WEB,OWASP,TESTING,SECURITY]     # TAG names should always be lowercase
 - [ ] Check Offline Web Application
 
 Source: [OWASP](https://www.owasp.org/index.php/Web_Application_Security_Testing_Cheat_Sheet)
+
+# Content Specific 
+
+### <a name="Test for cross-site scripting (XSS) vulnerabilities in login pages">Test for cross-site scripting (XSS) vulnerabilities in login pages</a>
+
+- [ ] Inject Script Code: You can attempt to inject script code into login page fields, such as the username or password field, and see if the script code is executed when the login page is loaded. You can use various payloads for this, such as "<script>alert('XSS');</script>" or "<img src=x onerror=alert('XSS')>". If the script code is executed, then the login page is vulnerable to XSS.
+- [ ] Test Input Validation: You can attempt to input malicious script code into login page fields and see if the web application filters or sanitizes the input. If the web application does not properly filter or sanitize the input, then it is vulnerable to XSS.
+- [ ] Test Cookies: You can check if the login page sets any cookies that could be vulnerable to XSS. This can be done by manipulating the cookie values and seeing if any script code is executed when the login page is loaded.
+- [ ] Test Hidden Fields: You can check if the login page contains any hidden fields that could be vulnerable to XSS. This can be done by attempting to inject script code into the hidden fields and seeing if the script code is executed when the login page is loaded.
+- [ ] Test for DOM-based XSS vulnerabilities by manipulating the DOM elements on the login page.
+- [ ] Test for reflected XSS vulnerabilities by injecting script code into the URL parameters used by the login page.
+- [ ] Test for stored XSS vulnerabilities by injecting script code into input fields that are stored in the web application's database.
+- [ ] Test for XSS vulnerabilities in error messages or validation messages displayed on the login page.
+- [ ] Test for XSS vulnerabilities in any JavaScript code used by the login page.
+- [ ] Test for XSS vulnerabilities in the HTTP response headers returned by the login page.
+- [ ] Test for XSS vulnerabilities in the HTML comments on the login page.
+- [ ] Test for XSS vulnerabilities in the HTML attributes used by the login page.
+- [ ] Test for XSS vulnerabilities in the CSS styles used by the login page.
+- [ ] Test for XSS vulnerabilities in any third-party JavaScript libraries or plugins used by the login page.
+- [ ] Test for XSS vulnerabilities in the web application's session management system.
+- [ ] Test for XSS vulnerabilities in the web application's error handling and logging systems.
+- [ ] Test for XSS vulnerabilities in the web application's user input validation and sanitization routines.
+- [ ] Test for XSS vulnerabilities in any user-generated content that is displayed on the login page, such as comments or reviews.
+- [ ] Test for XSS vulnerabilities in any search or filter functionality on the login page.
+- [ ] Test for XSS vulnerabilities in any redirection or forwarding functionality on the login page.
+- [ ] Test for XSS vulnerabilities in any AJAX or dynamic content loading functionality on the login page.
+- [ ] Test for XSS vulnerabilities in any internationalization or localization functionality on the login page.
+- [ ] Test for XSS vulnerabilities in any browser-specific features or APIs used by the login page.
+- [ ] Test for XSS vulnerabilities in any mobile-specific features or APIs used by the login page.
+
+
