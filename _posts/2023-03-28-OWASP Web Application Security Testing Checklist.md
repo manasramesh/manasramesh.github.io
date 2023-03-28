@@ -6,7 +6,6 @@ tags: [WEB,OWASP,TESTING,SECURITY]     # TAG names should always be lowercase
 ---
 
 
-`<script>` and other JavaScript code is not allowed in Markdown.
 # OWASP Web Application Security Testing Checklist
 
 ## Table of Contents
@@ -227,7 +226,7 @@ Source: [OWASP](https://www.owasp.org/index.php/Web_Application_Security_Testing
 
 ### <a name="Test for cross-site scripting (XSS) vulnerabilities in login pages">Test for cross-site scripting (XSS) vulnerabilities in login pages</a>
 
-- [ ] Inject Script Code: You can attempt to inject script code into login page fields, such as the username or password field, and see if the script code is executed when the login page is loaded. You can use various payloads for this, such as "<script>alert('XSS');</script>" or "<img src=x onerror=alert('XSS')>". If the script code is executed, then the login page is vulnerable to XSS.
+- [ ] Inject Script Code: You can attempt to inject script code into login page fields, such as the username or password field, and see if the script code is executed when the login page is loaded. You can use various payloads for this, such as `<script>alert('XSS');</script>` or `<img src=x onerror=alert('XSS')>`. If the script code is executed, then the login page is vulnerable to XSS.
 - [ ] Test Input Validation: You can attempt to input malicious script code into login page fields and see if the web application filters or sanitizes the input. If the web application does not properly filter or sanitize the input, then it is vulnerable to XSS.
 - [ ] Test Cookies: You can check if the login page sets any cookies that could be vulnerable to XSS. This can be done by manipulating the cookie values and seeing if any script code is executed when the login page is loaded.
 - [ ] Test Hidden Fields: You can check if the login page contains any hidden fields that could be vulnerable to XSS. This can be done by attempting to inject script code into the hidden fields and seeing if the script code is executed when the login page is loaded.
