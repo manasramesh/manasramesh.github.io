@@ -247,7 +247,7 @@ if 'x-amz-cf-id' in response.headers or 'x-amz-cf-pop' in response.headers:
     print("AWS WAF is present")
 else:
     print("AWS WAF is not present")
-
+```
 
 
 
