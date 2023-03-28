@@ -249,6 +249,24 @@ else:
     print("AWS WAF is not present")
 ```
 
+- [ ] A sample python code to find the presence of AZURE WAF on a targeted website
+```
+import requests
+
+url = 'https://<your_web_app>.azurewebsites.net'
+
+# Set the Azure WAF-specific header
+headers = {'X-MS-Client-Application-Name': 'web'}
+
+# Send a request to the web application
+response = requests.get(url, headers=headers)
+
+# Check the response for the presence of the Azure WAF-specific header
+if 'X-MS-Azure-Ref' in response.headers:
+    print('Azure WAF is present')
+else:
+    print('Azure WAF is not present')
+```
 
 
 ### <a name="Test for cross-site scripting (XSS) vulnerabilities in login pages">Test for cross-site scripting (XSS) vulnerabilities in login pages</a>
