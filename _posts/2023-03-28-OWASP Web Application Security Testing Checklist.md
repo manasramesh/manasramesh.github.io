@@ -250,17 +250,13 @@ else:
 ```
 
 - [ ] A sample python code to find the presence of AZURE WAF on a targeted website
-```
+```python
 import requests
-
 url = 'https://<your_web_app>.azurewebsites.net'
-
 # Set the Azure WAF-specific header
 headers = {'X-MS-Client-Application-Name': 'web'}
-
 # Send a request to the web application
 response = requests.get(url, headers=headers)
-
 # Check the response for the presence of the Azure WAF-specific header
 if 'X-MS-Azure-Ref' in response.headers:
     print('Azure WAF is present')
