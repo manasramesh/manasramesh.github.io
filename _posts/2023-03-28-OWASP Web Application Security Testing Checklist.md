@@ -83,6 +83,28 @@ tags: [WEB,OWASP,TESTING,SECURITY]     # TAG names should always be lowercase
 - [ ] Test for user-accessible authentication history
 - [ ] Test for out-of channel notification of account lockouts and successful password changes
 - [ ] Test for consistent authentication across applications with shared authentication schema / SSO
+- [ ] Inputs from ChatGPT :- 
+  - Test for SQL injection vulnerabilities in login pages.
+  - Test for cross-site scripting (XSS) vulnerabilities in login pages.
+  - Test for directory traversal vulnerabilities in login pages.
+  - Test for brute force attacks on login pages.
+  - Test for weak password policies or controls in the login process.
+  - Test for session fixation vulnerabilities in the login process.
+  - Test for authentication bypass through session hijacking.
+  - Test for authentication bypass through cookie manipulation.
+  - Test for authentication bypass through CSRF attacks.
+  - Test for authentication bypass through parameter tampering.
+  - Test for authentication bypass through hidden form fields.
+  - Test for authentication bypass through HTTP method tampering.
+  - Test for authentication bypass through URL parameter tampering.
+  - Test for authentication bypass through parameter pollution.
+  - Test for authentication bypass through HTTP request smuggling.
+  - Test for authentication bypass through server-side request forgery (SSRF) attacks.
+  - Test for authentication bypass through XML external entity (XXE) attacks.
+  - Test for authentication bypass through business logic vulnerabilities.
+  - Test for authentication bypass through broken access controls.
+  - Test for authentication bypass through insecure session management.
+
 
 
 
