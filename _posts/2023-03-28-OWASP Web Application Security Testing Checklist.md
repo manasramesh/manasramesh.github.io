@@ -1,3 +1,12 @@
+---
+title: OWASP Web Application Security Testing Checklist
+date: 2023-03-28 14:30:00 +/-TTTT
+categories: [WEB,OWASP,TESTING,SECURITY]
+tags: [WEB,OWASP,TESTING,SECURITY]     # TAG names should always be lowercase
+---
+
+
+
 # OWASP Web Application Security Testing Checklist
 
 ## Table of Contents
