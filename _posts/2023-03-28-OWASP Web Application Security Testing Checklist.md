@@ -254,7 +254,7 @@ Source: [OWASP](https://www.owasp.org/index.php/Web_Application_Security_Testing
 
 
 
-### <a name="Test for user enumeration">HTML 5</a>
+### <a name="Test for user enumeration">Test for user enumeration</a>
 
 - [ ] Verify if the error messages shown on the login page differ for valid and invalid usernames. If the error message is different for a valid username and an invalid username, an attacker can determine whether a username is valid or not. You can use tools like Burp Suite to automate this process.
 - [ ] Attempt to login with common usernames and observe whether the response differs for valid and invalid usernames. You can use a tool like Burp Suite or a web browser's developer console to capture the login requests and responses.
