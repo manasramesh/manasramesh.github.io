@@ -9,8 +9,6 @@ tags: [hacking, linux, oscp, hackthebox]     # TAG names should always be lowerc
 ### Lame — HackTheBox
 
 
-[https://www.linkedin.com/in/manas-ramesh-9a7ba4149](https://www.linkedin.com/in/manas-ramesh-9a7ba4149)
-
 ### Overview
 
 Lame is an easy beginner-friendly machine based on a Linux server. It is a good start for a person who started practices for OSCP. This machine Contains several ways to compromise. Let's do it
