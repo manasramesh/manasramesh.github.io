@@ -2,7 +2,7 @@
 title: THREAT MODELING SIMPLIFIED
 date: 2024-12-31 12:00:00 +/-TTTT
 categories: [Application Security, Hacking, Product Security]
-tags: [applicationsecurity, , hacking, productsecurity]     # TAG names should always be lowercase
+tags: [application security, hacking, product security]     # TAG names should always be lowercase
 ---
 
 
