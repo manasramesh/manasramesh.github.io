@@ -1,15 +1,13 @@
 ---
 title: THREAT MODELING SIMPLIFIED
-date: 2024-12-31 12:00:00 +/-TTTT
-categories: [Application Security, Hacking, Product Security]
-tags: [application security, hacking, product security]     # TAG names should always be lowercase
+date: 2024-12-31 12:01:00 +/-TTTT
+categories: [ApplicationSecurity, Hacking, ProductSecurity]
+tags: [applicationsecurity, hacking, productsecurity]     # TAG names should always be lowercase
 ---
 
 
 
-
-### **Threat Modeling Made Fun**
-
+# Threat Modeling Made Fun
 
 ## What’s Threat Modeling?
 Think of threat modeling as the security guard for your system. It spots risks, plans defenses, and keeps your app or system safe from all the digital mischief-makers.
