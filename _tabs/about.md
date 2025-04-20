@@ -182,7 +182,6 @@ Built a comprehensive SOC architecture integrating:
 - **LinkedIn**: [Manas Ramesh](https://www.linkedin.com/in/manas-ramesh-9a7ba4149/)
 - **GitHub**: [manasramesh](https://github.com/manasramesh)
 - **Website**: [manasramesh.github.io](https://manasramesh.github.io)
-- **Phone**: +91 7034432392
 
 <style>
 .profile-card {
