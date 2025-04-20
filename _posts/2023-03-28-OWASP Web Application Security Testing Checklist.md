@@ -262,7 +262,19 @@ else:
 ```
 
 
-### <a name="xss-vulnerabilities-in-login-pages">Test for cross-site scripting (XSS) vulnerabilities in login pages</a>
+### Test for user enumeration {#test-for-user-enumeration}
+
+- [ ] Verify if the error messages shown on the login page differ for valid and invalid usernames. If the error message is different for a valid username and an invalid username, an attacker can determine whether a username is valid or not. You can use tools like Burp Suite to automate this process.
+- [ ] Attempt to login with common usernames and observe whether the response differs for valid and invalid usernames. You can use a tool like Burp Suite or a web browser's developer console to capture the login requests and responses.
+- [ ] Check whether the password reset feature reveals whether a username is valid or not. If the password reset feature reveals that a username is valid, an attacker can use this information to launch a brute force attack on the login page.
+- [ ] Check the user registration page for any indication of valid usernames, such as a list of already registered users or a search feature that allows users to search for other users.
+- [ ] Use a tool like DirBuster or DirSearch to brute-force the web application's directories and files. This can reveal hidden login pages and directories that are not visible to normal users.
+- [ ] Check for differences in the response times for valid and invalid usernames. If the response time is different, it could indicate that the web application is performing an additional check to determine whether the username is valid or not.
+- [ ] Attempt to login with a large number of randomly generated usernames to see if there is a pattern in the response. If there is a pattern, it could indicate that the web application is vulnerable to user enumeration attacks.
+- [ ] Check the HTML source code of the login page for any hidden fields that may reveal information about valid usernames or user IDs.
+- [ ] Analyze the network traffic using a tool like Wireshark to look for any patterns or differences in the response for valid and invalid usernames.
+
+### Test for cross-site scripting (XSS) vulnerabilities in login pages {#xss-vulnerabilities-in-login-pages}
 
 - [ ] Inject Script Code: You can attempt to inject script code into login page fields, such as the username or password field, and see if the script code is executed when the login page is loaded. You can use various payloads for this, such as `<script>alert('XSS');</script>` or `<img src=x onerror=alert('XSS')>`. If the script code is executed, then the login page is vulnerable to XSS.
 - [ ] Test Input Validation: You can attempt to input malicious script code into login page fields and see if the web application filters or sanitizes the input. If the web application does not properly filter or sanitize the input, then it is vulnerable to XSS.
@@ -288,20 +300,5 @@ else:
 - [ ] Test for XSS vulnerabilities in any internationalization or localization functionality on the login page.
 - [ ] Test for XSS vulnerabilities in any browser-specific features or APIs used by the login page.
 - [ ] Test for XSS vulnerabilities in any mobile-specific features or APIs used by the login page.
-
-
-
-### <a name="test-for-user-enumeration">Test for user enumeration</a>
-
-- [ ] Verify if the error messages shown on the login page differ for valid and invalid usernames. If the error message is different for a valid username and an invalid username, an attacker can determine whether a username is valid or not. You can use tools like Burp Suite to automate this process.
-- [ ] Attempt to login with common usernames and observe whether the response differs for valid and invalid usernames. You can use a tool like Burp Suite or a web browser's developer console to capture the login requests and responses.
-- [ ] Check whether the password reset feature reveals whether a username is valid or not. If the password reset feature reveals that a username is valid, an attacker can use this information to launch a brute force attack on the login page.
-- [ ] Check the user registration page for any indication of valid usernames, such as a list of already registered users or a search feature that allows users to search for other users.
-- [ ] Use a tool like DirBuster or DirSearch to brute-force the web application's directories and files. This can reveal hidden login pages and directories that are not visible to normal users.
-- [ ] Check for differences in the response times for valid and invalid usernames. If the response time is different, it could indicate that the web application is performing an additional check to determine whether the username is valid or not.
-- [ ] Attempt to login with a large number of randomly generated usernames to see if there is a pattern in the response. If there is a pattern, it could indicate that the web application is vulnerable to user enumeration attacks.
-- [ ] Check the HTML source code of the login page for any hidden fields that may reveal information about valid usernames or user IDs.
-- [ ] Analyze the network traffic using a tool like Wireshark to look for any patterns or differences in the response for valid and invalid usernames.
-
 
 ### Risky Functionality {#risky-functionality}
