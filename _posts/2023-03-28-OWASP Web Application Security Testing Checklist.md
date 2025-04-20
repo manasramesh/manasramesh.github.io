@@ -86,7 +86,7 @@ tags: [WEB,OWASP,TESTING,SECURITY]     # TAG names should always be lowercase
 - [ ] Test for consistent authentication across applications with shared authentication schema / SSO
 - [ ] Inputs from ChatGPT :- 
   - Test for SQL injection vulnerabilities in login pages.
-  - [Test for cross-site scripting (XSS) vulnerabilities in login pages](#Information) 
+  - [Test for cross-site scripting (XSS) vulnerabilities in login pages](#xss-vulnerabilities) 
   - Test for directory traversal vulnerabilities in login pages.
   - Test for brute force attacks on login pages.
   - Test for weak password policies or controls in the login process.
