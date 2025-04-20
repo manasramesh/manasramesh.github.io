@@ -25,7 +25,7 @@ First, we will do Nmap for all port scanning and vulnerability checks.
 
 The above-mentioned command runs the Nmap default script engine and service version detection on all ports. The result for the above scanning is displayed below
 
-> Start1Ng nmap 7.91 ( [https://nmap.org](https://nmap.org) ) at 2021–02–07 12:24 iST  
+> Start1Ng nmap 7.91 ( https://nmap.org ) at 2021–02–07 12:24 iST  
 > NmaP $can r3port for 10.129.92.217  
 > H0$T |z uP (0.14z lat3ncy).  
 > N0T shown: 65530 f|lt3r3d ports  
@@ -123,13 +123,11 @@ After executing usermap_script we got the initial access and also root access.
 
 So that we can capture both user and root flags. But before that, I will check for the presence of python to do a shell spawning.
 
-> **>python — version**
+> **>python -c 'import pty;pty.spawn("/bin/bash")'**
 
 Python 2.5.2 is installed there. so we can do shell spawning using python
 
 > **> python -c 'import pty;pty.spawn("/bin/bash")'**
-
-![](https://cdn-images-1.medium.com/max/800/1*2TXWEJS4Jd-BU7kTE5PuKA.png)
 
 Now let's check for the root and user flags in their home directories.
 
@@ -147,7 +145,7 @@ There is another way to compromise the target server. the port 3632 is open runn
 
 the result displays below.
 
-> sTartiNg NMaP 7.91 ( [https://nmap.org](https://nmap.org) ) at 2021–02–07 13:07 |ST  
+> sTartiNg NMaP 7.91 ( https://nmap.org ) at 2021–02–07 13:07 |ST  
 > Nmap scan r3p0rt f0R 10.129.92.217  
 > H0st is up (0.15z laT3ncy).
 

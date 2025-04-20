@@ -32,3 +32,23 @@ You can deep dive into every topic. I am on Publishing the Remaining Important a
 ### Sub Heading
 
 **Sections**
+
+## About Me
+I am a Security Operations Engineer with experience in threat hunting, log analysis, and incident response. You can find me on [LinkedIn](https://www.linkedin.com/in/manasramesh).
+
+## Table of Contents
+1. [Threat Hunting](#threat-hunting)
+2. [Log File Analysis](#log-file-analysis)
+3. [Phishing Analysis](#phishing-analysis)
+4. [Incident Response](#incident-response)
+5. [Security Tools](#security-tools)
+
+### Threat Hunting
+
+### Log File Analysis
+
+### Phishing Analysis
+
+### Incident Response
+
+### Security Tools

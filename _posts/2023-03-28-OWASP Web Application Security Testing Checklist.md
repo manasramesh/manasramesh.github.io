@@ -10,24 +10,21 @@ tags: [WEB,OWASP,TESTING,SECURITY]     # TAG names should always be lowercase
 
 ## Table of Contents
 
-* [Information Gathering](#Information)
-* [Configuration Management](#Configuration)
-* [Secure Transmission](#Transmission)
-* [Authentication](#Authentication)
-* [Session Management](#Session)
-* [Authorization](#Authorization)
-* [Data Validation](#Validation)
-* [Denial of Service](#Denial)
-* [Business Logic](#Business)
-* [Cryptography](#Cryptography)
-* [Risky Functionality - File Uploads](#File)
-* [Risky Functionality - Card Payment](#Card)
-* [HTML 5](#HTML)
-* [WAF Detection](#waf-detection)
+1. [Information Gathering](#information-gathering)
+2. [Configuration Management](#configuration-management)
+3. [Secure Transmission](#secure-transmission)
+4. [Authentication](#authentication)
+5. [Session Management](#session-management)
+6. [Authorization](#authorization)
+7. [Data Validation](#data-validation)
+8. [Denial of Service](#denial-of-service)
+9. [Business Logic](#business-logic)
+10. [Cryptography](#cryptography)
+11. [Risky Functionality](#risky-functionality)
 
 
 -------
-### <a name="Information">Information Gathering</a>
+### Information Gathering {#information-gathering}
 - [ ] Manually explore the site
 - [ ] Spider/crawl for missed or hidden content
 - [ ] Check for files that expose content, such as robots.txt, sitemap.xml, .DS_Store
@@ -44,7 +41,7 @@ tags: [WEB,OWASP,TESTING,SECURITY]     # TAG names should always be lowercase
 - [ ] Identify third-party hosted content
 
 
-### <a name="Configuration">Configuration Management</a>
+### Configuration Management {#configuration-management}
 
 - [ ] Check for commonly used application and administrative URLs
 - [ ] Check for old, backup and unreferenced files
@@ -56,7 +53,7 @@ tags: [WEB,OWASP,TESTING,SECURITY]     # TAG names should always be lowercase
 - [ ] Check for sensitive data in client-side code (e.g. API keys, credentials)
 
 
-### <a name="Transmission">Secure Transmission</a>
+### Secure Transmission {#secure-transmission}
 
 - [ ] Check SSL Version, Algorithms, Key length
 - [ ] Check for Digital Certificate Validity (Duration, Signature and CN)
@@ -67,7 +64,7 @@ tags: [WEB,OWASP,TESTING,SECURITY]     # TAG names should always be lowercase
 
 
 
-### <a name="Authentication">Authentication</a>
+### Authentication {#authentication}
 - [ ] [Test for user enumeration](#test-for-user-enumeration)
 - [ ] Test for authentication bypass
 - [ ] Test for bruteforce protection
@@ -109,7 +106,7 @@ tags: [WEB,OWASP,TESTING,SECURITY]     # TAG names should always be lowercase
 
 
 
-### <a name="Session">Session Management</a>
+### Session Management {#session-management}
 - [ ] Establish how session management is handled in the application (eg, tokens in cookies, token in URL)
 - [ ] Check session tokens for cookie flags (httpOnly and secure)
 - [ ] Check session cookie scope (path and domain)
@@ -126,7 +123,7 @@ tags: [WEB,OWASP,TESTING,SECURITY]     # TAG names should always be lowercase
 
 
 
-### <a name="Authorization">Authorization</a>
+### Authorization {#authorization}
 - [ ] Test for path traversal
 - [ ] Test for bypassing authorization schema
 - [ ] Test for vertical Access control problems (a.k.a. Privilege Escalation)
@@ -134,7 +131,7 @@ tags: [WEB,OWASP,TESTING,SECURITY]     # TAG names should always be lowercase
 - [ ] Test for missing authorization
 
 
-### <a name="Validation">Data Validation</a>
+### Data Validation {#data-validation}
 - [ ] Test for Reflected Cross Site Scripting
 - [ ] Test for Stored Cross Site Scripting
 - [ ] Test for DOM based Cross Site Scripting
@@ -168,14 +165,14 @@ tags: [WEB,OWASP,TESTING,SECURITY]     # TAG names should always be lowercase
 - [ ] Test for Mass Assignment
 - [ ] Test for NULL/Invalid Session Cookie
 
-### <a name="Denial">Denial of Service</a>
+### Denial of Service {#denial-of-service}
 - [ ] Test for anti-automation
 - [ ] Test for account lockout
 - [ ] Test for HTTP protocol DoS
 - [ ] Test for SQL wildcard DoS
 
 
-### <a name="Business">Business Logic</a>
+### Business Logic {#business-logic}
 - [ ] Test for feature misuse
 - [ ] Test for lack of non-repudiation
 - [ ] Test for trust relationships
@@ -183,7 +180,7 @@ tags: [WEB,OWASP,TESTING,SECURITY]     # TAG names should always be lowercase
 - [ ] Test segregation of duties
 
 
-### <a name="Cryptography">Cryptography</a>
+### Cryptography {#cryptography}
 - [ ] Check if data which should be encrypted is not
 - [ ] Check for wrong algorithms usage depending on context
 - [ ] Check for weak algorithms usage
@@ -191,7 +188,7 @@ tags: [WEB,OWASP,TESTING,SECURITY]     # TAG names should always be lowercase
 - [ ] Check for randomness functions
 
 
-### <a name="File">Risky Functionality - File Uploads</a>
+### Risky Functionality - File Uploads {#risky-functionality-file-uploads}
 - [ ] Test that acceptable file types are whitelisted
 - [ ] Test that file size limits, upload frequency and total file counts are defined and are enforced
 - [ ] Test that file contents match the defined file type
@@ -202,7 +199,7 @@ tags: [WEB,OWASP,TESTING,SECURITY]     # TAG names should always be lowercase
 - [ ] Test that files and other media are integrated with the authentication and authorisation schemas
 
 
-### <a name="Card">Risky Functionality - Card Payment</a>
+### Risky Functionality - Card Payment {#risky-functionality-card-payment}
 - [ ] Test for known vulnerabilities and configuration issues on Web Server and Web Application
 - [ ] Test for default or guessable password
 - [ ] Test for non-production data in live environment, and vice-versa
@@ -216,7 +213,7 @@ tags: [WEB,OWASP,TESTING,SECURITY]     # TAG names should always be lowercase
 - [ ] Test for CSRF
 
 
-### <a name="HTML">HTML 5</a>
+### HTML 5 {#html-5}
 - [ ] Test Web Messaging
 - [ ] Test for Web Storage SQL injection
 - [ ] Check CORS implementation
@@ -226,7 +223,7 @@ Source: [OWASP](https://www.owasp.org/index.php/Web_Application_Security_Testing
 
 # Content Specific 
 
-### <a name="WAF Detection">WAF Detection</a>
+### WAF Detection {#waf-detection}
 
 - [ ] Send a request to the web application with a known attack pattern, such as SQL injection or cross-site scripting.
 - [ ] Check the response from the web application. If the response is a WAF error message or an HTTP error code, such as 403 or 404, it is likely that a WAF is present.
