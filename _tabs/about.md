@@ -4,9 +4,12 @@ icon: fas fa-user
 order: 4
 ---
 
-# Manas Ramesh
-<div class="profile-header">
-  <div class="title-box">
+<div class="profile-wrapper">
+  <div class="profile-image">
+    <img src="/assets/img/profile.jpg" alt="Manas Ramesh" class="profile-pic">
+  </div>
+  <div class="profile-content">
+    <h1 class="name">Manas Ramesh</h1>
     <h2 class="subtitle">Senior Security Engineer</h2>
     <p class="location">📍 Bangalore, Karnataka</p>
   </div>
@@ -180,26 +183,67 @@ Built a comprehensive SOC architecture integrating:
 - **Phone**: +91 7034432392
 
 <style>
-.profile-header {
-  background: linear-gradient(to right, #1a1a1a, #4a4a4a);
-  color: white;
+.profile-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
   padding: 2rem;
-  border-radius: 10px;
-  margin-bottom: 2rem;
+  background: linear-gradient(to right, #1a1a1a, #4a4a4a);
+  border-radius: 15px;
+  color: white;
 }
 
-.title-box {
-  text-align: left;
+.profile-image {
+  flex-shrink: 0;
 }
 
-.subtitle {
-  color: #00ff00;
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid #00ff00;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+}
+
+.profile-content {
+  flex-grow: 1;
+}
+
+.profile-content .name {
   margin: 0;
+  font-size: 2.5rem;
+  color: white;
 }
 
-.location {
+.profile-content .subtitle {
+  margin: 0.5rem 0;
+  color: #00ff00;
+  font-size: 1.5rem;
+}
+
+.profile-content .location {
+  margin: 0;
   color: #cccccc;
-  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .profile-wrapper {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile-content .name {
+    font-size: 2rem;
+  }
 }
 
 .skills-grid {
