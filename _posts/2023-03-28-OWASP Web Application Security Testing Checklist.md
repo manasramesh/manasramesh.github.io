@@ -291,7 +291,7 @@ else:
 
 
 
-### <a name="Test for user enumeration">Test for user enumeration</a>
+### <a name="test-for-user-enumeration">Test for user enumeration</a>
 
 - [ ] Verify if the error messages shown on the login page differ for valid and invalid usernames. If the error message is different for a valid username and an invalid username, an attacker can determine whether a username is valid or not. You can use tools like Burp Suite to automate this process.
 - [ ] Attempt to login with common usernames and observe whether the response differs for valid and invalid usernames. You can use a tool like Burp Suite or a web browser's developer console to capture the login requests and responses.
@@ -302,3 +302,6 @@ else:
 - [ ] Attempt to login with a large number of randomly generated usernames to see if there is a pattern in the response. If there is a pattern, it could indicate that the web application is vulnerable to user enumeration attacks.
 - [ ] Check the HTML source code of the login page for any hidden fields that may reveal information about valid usernames or user IDs.
 - [ ] Analyze the network traffic using a tool like Wireshark to look for any patterns or differences in the response for valid and invalid usernames.
+
+
+### Risky Functionality {#risky-functionality}
