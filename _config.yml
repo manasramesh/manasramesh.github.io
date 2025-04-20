@@ -9,24 +9,24 @@ theme: jekyll-theme-chirpy
 lang: en
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone:
+timezone: Asia/Kolkata
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: Manas Ramesh # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: Security Engineer | Cloud Security | Product Security | SOC and Cyber Defence | Infra Security # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  Security Engineer at One Pay | Ex-RAK BANK | Ex-Upstox | Ex-OLA | Technology enthusiast | Blog about cybersecurity, cloud security, and infrastructure security.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+url: "https://manasramesh.github.io"
 
 github:
-  username: github_username # change to your GitHub username
+  username: manasramesh # GitHub username
 
 twitter:
   username: twitter_username # change to your Twitter username
@@ -34,12 +34,12 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  name: Manas Ramesh
+  email: manasayancheri@gmail.com
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
+    - https://www.linkedin.com/in/manas-ramesh-9a7ba4149/
+    - https://github.com/manasramesh
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
