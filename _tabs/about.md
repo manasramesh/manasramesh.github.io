@@ -4,13 +4,15 @@ icon: fas fa-user
 order: 4
 ---
 
-<div class="profile-wrapper">
-  <div class="profile-image">
-    <img src="/assets/img/profile.jpg" alt="Manas Ramesh" class="profile-pic">
+<div class="profile-card">
+  <div class="profile-image-wrapper">
+    <div class="profile-image">
+      <img src="/assets/img/profile.jpg" alt="Manas Ramesh">
+    </div>
   </div>
-  <div class="profile-content">
+  <div class="profile-info">
     <h1 class="name">Manas Ramesh</h1>
-    <h2 class="subtitle">Senior Security Engineer</h2>
+    <h2 class="role">Senior Security Engineer</h2>
     <p class="location">📍 Bangalore, Karnataka</p>
   </div>
 </div>
@@ -183,66 +185,103 @@ Built a comprehensive SOC architecture integrating:
 - **Phone**: +91 7034432392
 
 <style>
-.profile-wrapper {
+.profile-card {
+  background: linear-gradient(145deg, #1a1a1a 0%, #2d2d2d 100%);
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 3rem;
   display: flex;
   align-items: center;
-  gap: 2rem;
-  margin-bottom: 3rem;
-  padding: 2rem;
-  background: linear-gradient(to right, #1a1a1a, #4a4a4a);
-  border-radius: 15px;
-  color: white;
+  gap: 3rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-.profile-image {
+.profile-image-wrapper {
+  position: relative;
+  width: 220px;
+  height: 220px;
   flex-shrink: 0;
 }
 
-.profile-pic {
-  width: 200px;
-  height: 200px;
+.profile-image-wrapper::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
   border-radius: 50%;
-  border: 4px solid #00ff00;
-  object-fit: cover;
-  box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+  background: linear-gradient(45deg, #00ff00, #00cc00);
+  z-index: 0;
 }
 
-.profile-content {
+.profile-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #1a1a1a;
+}
+
+.profile-info {
   flex-grow: 1;
 }
 
-.profile-content .name {
-  margin: 0;
+.profile-info .name {
+  color: #ffffff;
   font-size: 2.5rem;
-  color: white;
+  margin: 0;
+  line-height: 1.2;
 }
 
-.profile-content .subtitle {
-  margin: 0.5rem 0;
+.profile-info .role {
   color: #00ff00;
   font-size: 1.5rem;
+  margin: 0.5rem 0;
+  font-weight: 500;
 }
 
-.profile-content .location {
-  margin: 0;
+.profile-info .location {
   color: #cccccc;
   font-size: 1.1rem;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 @media (max-width: 768px) {
-  .profile-wrapper {
+  .profile-card {
     flex-direction: column;
     text-align: center;
     padding: 1.5rem;
+    gap: 1.5rem;
   }
 
-  .profile-pic {
-    width: 150px;
-    height: 150px;
+  .profile-image-wrapper {
+    width: 180px;
+    height: 180px;
   }
 
-  .profile-content .name {
+  .profile-info .name {
     font-size: 2rem;
+  }
+
+  .profile-info .role {
+    font-size: 1.2rem;
+  }
+
+  .profile-info .location {
+    justify-content: center;
   }
 }
 
