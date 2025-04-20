@@ -192,24 +192,30 @@ Built a comprehensive SOC architecture integrating:
   margin-bottom: 3rem;
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  flex-wrap: wrap;
 }
 
 .profile-image-wrapper {
   position: relative;
-  width: 220px;
-  height: 220px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
   flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile-image-wrapper::after {
   content: '';
   position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
+  top: -6px;
+  left: -6px;
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
   border-radius: 50%;
   background: linear-gradient(45deg, #00ff00, #00cc00);
   z-index: 0;
@@ -217,11 +223,11 @@ Built a comprehensive SOC architecture integrating:
 
 .profile-image {
   position: relative;
+  z-index: 1;
   width: 100%;
   height: 100%;
   border-radius: 50%;
   overflow: hidden;
-  z-index: 1;
 }
 
 .profile-image img {
@@ -229,11 +235,12 @@ Built a comprehensive SOC architecture integrating:
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #1a1a1a;
+  display: block;
 }
 
 .profile-info {
-  flex-grow: 1;
+  flex: 1;
+  min-width: 280px;
 }
 
 .profile-info .name {
@@ -262,26 +269,12 @@ Built a comprehensive SOC architecture integrating:
 @media (max-width: 768px) {
   .profile-card {
     flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 1.5rem;
-    gap: 1.5rem;
   }
 
-  .profile-image-wrapper {
-    width: 180px;
-    height: 180px;
-  }
-
-  .profile-info .name {
-    font-size: 2rem;
-  }
-
-  .profile-info .role {
-    font-size: 1.2rem;
-  }
-
-  .profile-info .location {
-    justify-content: center;
+  .profile-info {
+    text-align: center;
   }
 }
 
