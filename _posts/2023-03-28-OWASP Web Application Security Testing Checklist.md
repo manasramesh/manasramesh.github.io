@@ -86,7 +86,7 @@ tags: [WEB,OWASP,TESTING,SECURITY]     # TAG names should always be lowercase
 - [ ] Test for consistent authentication across applications with shared authentication schema / SSO
 - [ ] Inputs from ChatGPT :- 
   - Test for SQL injection vulnerabilities in login pages.
-  - [Test for cross-site scripting (XSS) vulnerabilities in login pages](#xss-vulnerabilities) 
+  - [Test for cross-site scripting (XSS) vulnerabilities in login pages](#xss-vulnerabilities-in-login-pages) 
   - Test for directory traversal vulnerabilities in login pages.
   - Test for brute force attacks on login pages.
   - Test for weak password policies or controls in the login process.
@@ -265,7 +265,7 @@ else:
 ```
 
 
-### <a name="Test for cross-site scripting (XSS) vulnerabilities in login pages">Test for cross-site scripting (XSS) vulnerabilities in login pages</a>
+### <a name="xss-vulnerabilities-in-login-pages">Test for cross-site scripting (XSS) vulnerabilities in login pages</a>
 
 - [ ] Inject Script Code: You can attempt to inject script code into login page fields, such as the username or password field, and see if the script code is executed when the login page is loaded. You can use various payloads for this, such as `<script>alert('XSS');</script>` or `<img src=x onerror=alert('XSS')>`. If the script code is executed, then the login page is vulnerable to XSS.
 - [ ] Test Input Validation: You can attempt to input malicious script code into login page fields and see if the web application filters or sanitizes the input. If the web application does not properly filter or sanitize the input, then it is vulnerable to XSS.
