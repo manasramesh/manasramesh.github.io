@@ -5,10 +5,16 @@ order: 4
 ---
 
 # Manas Ramesh
+<div class="profile-header">
+  <div class="title-box">
+    <h2 class="subtitle">Senior Security Engineer</h2>
+    <p class="location">📍 Bangalore, Karnataka</p>
+  </div>
+</div>
 
 ## Professional Summary
 
-I am a Security Engineer with a strong background in cybersecurity, currently working at One Pay. My expertise spans across cloud security, product security, and infrastructure security. I have previously worked with leading organizations including RAK BANK, Upstox, and OLA, where I contributed to strengthening their security posture and implementing robust security measures.
+Passionate and driven cybersecurity professional with extensive experience in both blue and red teaming activities. Skilled in fortifying security postures and enhancing defenses for organizations, with a strong focus on threat detection, incident response, and proactive mitigation. Proficient in cloud security, Python automation, and application security, leveraging these skills to streamline processes and improve resilience.
 
 ## Certifications
 
@@ -36,105 +42,237 @@ I am a Security Engineer with a strong background in cybersecurity, currently wo
 - ![Sumologic](https://img.shields.io/badge/Sumologic-SIEM_Fundamentals-00B4E2?style=flat-square) - Sumologic Technologies (Jun 2021)
   - Credential ID: zp7ievq5b2s4
 
-## Current Role
+## 🏢 Professional Experience
 
-**Security Engineer at One Pay**
-- Working on securing financial infrastructure
-- Implementing robust security measures for digital payments
-- Ensuring compliance with security standards and best practices
+### Senior Security Consultant
+**RakBank - UAE** _(2024 - Present)_
+- Currently contributing to enhancing the bank's security infrastructure and operations
+- Implementing advanced security frameworks and controls
 
-## Professional Experience
+### Senior Security Engineer
+**Upstox - Bangalore** _(2023 - 2024)_
+- **Security Solution Design**: Developed and maintained comprehensive security frameworks
+- **Incident Response**: Led security incident investigations and response efforts
+- **IAM Management**: Implemented robust access controls ensuring regulatory compliance
+- **SOC Development**: Architected and matured the Security Operations Center
+- **Red Team Operations**: Conducted breach simulations and phishing campaigns
+- **Cloud Security**: Enhanced AWS and Azure security practices
+- **Tool Development**: Created custom security tools using Python
 
-### RAK BANK
-- Security Operations and Infrastructure Security
-- Implemented security controls and monitoring systems
-- Worked on threat detection and incident response
+### Security Operations Engineer
+**OLA - Bangalore** _(2021 - 2023)_
+- **Security Monitoring**: Established comprehensive security risk monitoring systems
+- **SIEM & SOAR**: Implemented and managed security tools for threat detection
+- **Automation**: Developed Python and shell scripts for security process automation
+- **Compliance**: Managed GDPR, RBI, and PCI audit requirements
+- **SOC Enhancement**: Key contributor to SOC maturity program
+- **Security Testing**: Conducted phishing simulations and penetration testing
+- **Achievement**: Awarded OLA Best Performer of the Year 2022
 
-### Upstox
-- Product Security and Cloud Security
-- Secured trading platforms and financial systems
-- Implemented security best practices in cloud environments
+### Cyber Security Instructor
+**Networkers Home** _(2020 - 2021)_
+- Conducted training for CCNA, CEH, AWS, Azure, and Python automation
+- Created and managed CTF competitions
+- Developed practical cybersecurity curricula
 
-### OLA
-- Security Engineering and Infrastructure Protection
-- Worked on securing large-scale infrastructure
-- Implemented security controls for ride-sharing platform
+## 🛠 Technical Skills
 
-## Areas of Expertise
+<div class="skills-grid">
+  <div class="skill-category">
+    <h3>Security Operations</h3>
+    <ul>
+      <li>Blue Team Operations</li>
+      <li>Red Team Assessments</li>
+      <li>SOC Architecture & Development</li>
+      <li>Incident Response</li>
+      <li>Digital Forensics</li>
+    </ul>
+  </div>
+  
+  <div class="skill-category">
+    <h3>Cloud & Infrastructure</h3>
+    <ul>
+      <li>AWS Security</li>
+      <li>Azure Security</li>
+      <li>Active Directory</li>
+      <li>Infrastructure Security</li>
+      <li>Network Security</li>
+    </ul>
+  </div>
+  
+  <div class="skill-category">
+    <h3>Application Security</h3>
+    <ul>
+      <li>OWASP Top 10</li>
+      <li>API Security</li>
+      <li>Web Application Security</li>
+      <li>Penetration Testing</li>
+      <li>Vulnerability Assessment</li>
+    </ul>
+  </div>
+  
+  <div class="skill-category">
+    <h3>Tools & Technologies</h3>
+    <ul>
+      <li>SIEM/SOAR Platforms</li>
+      <li>EDR/XDR Solutions</li>
+      <li>Python Automation</li>
+      <li>Shell Scripting</li>
+      <li>Security Tools Development</li>
+    </ul>
+  </div>
+</div>
 
-- Cloud Security (AWS, Azure, GCP)
-- Product Security
-- SOC and Cyber Defense
-- Infrastructure Security
-- Security Operations
-- Penetration Testing
-- Vulnerability Assessment
-- Network Security
-- Application Security
-- Container Security
+## 🚀 Notable Projects
 
-## Technical Skills
+### Cyber Defence Architecture (Open Source)
+Built a comprehensive SOC architecture integrating:
+- ModSecurity for web application firewall
+- Wazuh for security monitoring
+- Graylog for log management
+- Jira for incident tracking
+- Snort & Suricata for network security
+- Custom Python scripts for automation
 
-### Security Tools
-- SIEM Solutions
-- EDR Platforms
-- WAF Implementation
-- Vulnerability Scanners
-- Security Monitoring Tools
+### Security Tools Development
+1. **CTF Room on TryHackMe**
+   - Created challenging security scenarios
+   - Available at: [TryHackMe MNS CTF](https://tryhackme.com/jr/mnsctf1initcrew)
 
-### Cloud Security
-- AWS Security
-- Azure Security
-- GCP Security
-- Cloud Infrastructure Protection
-- Cloud Compliance
+2. **Fake Domain Identification Tool**
+   - Automated detection of fraudulent domains
+   - Enhanced brand protection capabilities
 
-### Infrastructure Security
-- Network Security
-- System Hardening
-- Access Control
-- Security Architecture
-- Infrastructure as Code
+3. **Cyber/Brand/Infra Threat Monitoring Tool**
+   - Comprehensive threat monitoring solution
+   - Real-time risk assessment capabilities
 
-## Contact Information
+## 🏆 Achievements & Recognition
 
-Feel free to connect with me through:
+- 🥇 OLA Best Performer of the Year (2022)
+- 🏆 EC-Council CEH Hall of Fame Finalist (2021)
+- 🏅 CloudSEK CTF Winner (2020)
+- ⭐ Active participant on HackTheBox and TryHackMe
+
+## 📚 Education
+
+- **Bachelor of Engineering in Computer Science**
+  _Anna University (2015-2019)_
+
+- **Cyber X Masters**
+  _Networkers Home (2019-2020)_
+  CCNA, CEH, Azure, AWS, Python
+
+## 🎯 Areas of Interest
+
+- Creating and Participating in CTF Challenges
+- Bug Bounty Hunting
+- Cybersecurity Blogging
+- Security Tool Development
+- Continuous Learning in Emerging Technologies
+
+## 📫 Contact Information
 
 - **Email**: [manasayancheri@gmail.com](mailto:manasayancheri@gmail.com)
 - **LinkedIn**: [Manas Ramesh](https://www.linkedin.com/in/manas-ramesh-9a7ba4149/)
 - **GitHub**: [manasramesh](https://github.com/manasramesh)
-
-## Quick Facts
-
-- **Location**: India
-- **Timezone**: Asia/Kolkata
-- **Current Role**: Security Engineer
-- **Company**: One Pay
-- **Industry**: Financial Technology
-- **Specialties**: Cloud Security, Product Security, Infrastructure Security
+- **Website**: [manasramesh.github.io](https://manasramesh.github.io)
+- **Phone**: +91 7034432392
 
 <style>
-.lead {
-  font-size: 1.25rem;
-  font-weight: 300;
+.profile-header {
+  background: linear-gradient(to right, #1a1a1a, #4a4a4a);
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
 }
-.card {
-  margin-top: 2rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+.title-box {
+  text-align: left;
 }
-.card-title {
+
+.subtitle {
+  color: #00ff00;
+  margin: 0;
+}
+
+.location {
+  color: #cccccc;
+  margin-top: 0.5rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.skill-category {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+}
+
+.skill-category h3 {
   color: var(--heading-color);
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
+  margin-top: 0;
+  border-bottom: 2px solid var(--heading-color);
+  padding-bottom: 0.5rem;
 }
-.list-unstyled {
+
+.skill-category ul {
+  list-style-type: none;
   padding-left: 0;
 }
-.list-unstyled li {
-  margin-bottom: 0.5rem;
+
+.skill-category li {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
 }
-img[src*="shields.io"] {
+
+.skill-category li:before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--heading-color);
+}
+
+h2 {
+  border-bottom: 2px solid var(--heading-color);
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  color: var(--heading-color);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+.certifications-section img {
   margin-right: 4px;
   vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
