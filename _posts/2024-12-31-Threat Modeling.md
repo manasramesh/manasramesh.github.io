@@ -1,6 +1,6 @@
 ---
-title: "Understanding Threat Modeling: A Comprehensive Guide with Real-World Example"
-date: 2024-12-31
+title: Understanding Threat Modeling A Comprehensive Guide with Real-World Example
+date: 2024-12-31 12:30:00 +/-TTTT
 categories: [Security, Software Development]
 tags: [threat-modeling, security, software-security, risk-assessment, STRIDE, e-commerce-security]
 ---
