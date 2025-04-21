@@ -422,6 +422,7 @@ Let's walk through implementing a detection for suspicious AWS API activity:
 
 1. **Create the Detection**
 ```python
+#suspicious_activity.py
 from panther_base_helpers import deep_get
 from datetime import datetime, timedelta
 
@@ -467,6 +468,7 @@ def runbook(event):
 
 2. **Add Tests**
 ```python
+#test.py
 def test_rule():
     # Test case 1: Normal API call
     assert not rule({
@@ -530,8 +532,8 @@ jobs:
 Panther allows you to define data models for consistent log parsing:
 
 ```python
+#sample.py
 from panther_base_helpers import deep_get
-
 class AWSCloudTrail:
     def __init__(self, event):
         self.event = event
