@@ -224,6 +224,7 @@ panther-analysis/
 ### Complete Suspicious API Activity Detection
 
 1. **Python Rule Logic** (`rules/aws_suspicious_api_activity.py`):
+
 ```python
 from panther_base_helpers import deep_get
 from datetime import datetime, timedelta
@@ -232,19 +233,19 @@ def rule(event):
     # Only process AWS API calls
     if not event.get("eventSource", "").endswith(".amazonaws.com"):
         return False
-        
+
     # Get the API call details
     event_name = event.get("eventName", "")
     source_ip = deep_get(event, "sourceIPAddress")
     user_agent = deep_get(event, "userAgent")
-    
+
     # Check for suspicious patterns
     suspicious_patterns = [
-        "Delete",  # Destructive actions
-        "Terminate",  # Resource termination
-        "Modify",  # Configuration changes
+        "Delete",      # Destructive actions
+        "Terminate",   # Resource termination
+        "Modify",      # Configuration changes
     ]
-    
+
     return any(pattern in event_name for pattern in suspicious_patterns)
 
 def title(event):
@@ -266,10 +267,8 @@ def runbook(event):
     3. Review the user agent for anomalies
     4. If unauthorized, revoke the credentials used
     """
-```
+1. **YAML Metadata** (`rules/aws_suspicious_api_activity.yml`):
 
-2. **YAML Metadata** (`rules/aws_suspicious_api_activity.yml`):
-```yaml
 AnalysisType: rule
 Enabled: true
 Filename: aws_suspicious_api_activity
@@ -292,6 +291,7 @@ Tests:
         "userAgent": "aws-cli/1.18.69"
       }
     ExpectedResult: true
+
   - Name: Normal API call
     Log: |
       {
@@ -301,6 +301,7 @@ Tests:
         "userAgent": "aws-cli/1.18.69"
       }
     ExpectedResult: false
+
   - Name: Non-AWS event
     Log: |
       {
@@ -309,7 +310,7 @@ Tests:
         "sourceIPAddress": "192.168.1.1"
       }
     ExpectedResult: false
-```
+
 
 ### Unit Tests (`tests/test_aws_root_user_activity.py`)
 ```python
