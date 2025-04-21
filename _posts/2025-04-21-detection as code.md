@@ -124,6 +124,7 @@ Panther uses a combination of Python for detection logic and YAML for metadata, 
 
 1. **Python Rule Logic** (`rules/aws_root_user_activity.py`):
 ```python
+#aws_root_user_activity.py
 from panther_base_helpers import deep_get
 
 def rule(event):
