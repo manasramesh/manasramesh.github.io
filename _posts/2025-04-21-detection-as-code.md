@@ -137,19 +137,14 @@ def rule(event):
         return True
     
     return False
-
 def title(event):
     return f"Root user activity detected in account {event.get('recipientAccountId')}"
-
 def dedup(event):
     return event.get("recipientAccountId")
-
 def severity(event):
     return "HIGH"
-
 def reference(event):
     return "https://docs.panther.com/detections/aws_root_user_activity"
-
 def runbook(event):
     return """
     1. Verify if the root user activity was authorized
