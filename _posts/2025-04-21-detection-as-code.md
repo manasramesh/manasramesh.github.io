@@ -123,6 +123,7 @@ Panther uses a combination of Python for detection logic and YAML for metadata, 
 ### Complete Detection Example
 
 1. **Python Rule Logic** (`rules/aws_root_user_activity.py`):
+
 ```python
 #aws_root_user_activity.py
 from panther_base_helpers import deep_get
@@ -137,14 +138,19 @@ def rule(event):
         return True
     
     return False
+
 def title(event):
     return f"Root user activity detected in account {event.get('recipientAccountId')}"
+
 def dedup(event):
     return event.get("recipientAccountId")
+
 def severity(event):
     return "HIGH"
+
 def reference(event):
     return "https://docs.panther.com/detections/aws_root_user_activity"
+
 def runbook(event):
     return """
     1. Verify if the root user activity was authorized
@@ -152,7 +158,7 @@ def runbook(event):
     3. Review the specific actions taken
     4. If unauthorized, rotate root user credentials
     """
-```
+
 
 2. **YAML Metadata** (`rules/aws_root_user_activity.yml`):
 ```yaml
