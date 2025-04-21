@@ -129,14 +129,10 @@ Panther uses a combination of Python for detection logic and YAML for metadata, 
 from panther_base_helpers import deep_get
 
 def rule(event):
-    # Only look at IAM events
     if event.get("eventSource") != "iam.amazonaws.com":
         return False
-    
-    # Check for root user activity
     if deep_get(event, "userIdentity", "type") == "Root":
         return True
-    
     return False
 
 def title(event):
@@ -152,15 +148,16 @@ def reference(event):
     return "https://docs.panther.com/detections/aws_root_user_activity"
 
 def runbook(event):
-    return """
+    return '''
     1. Verify if the root user activity was authorized
     2. Check if MFA was used
     3. Review the specific actions taken
     4. If unauthorized, rotate root user credentials
-    """
-
+    '''
+```
 
 2. **YAML Metadata** (`rules/aws_root_user_activity.yml`):
+
 ```yaml
 AnalysisType: rule
 Enabled: true
@@ -208,7 +205,8 @@ Tests:
 ```
 
 ### Directory Structure
-```
+
+```text
 panther-analysis/
 ├── rules/
 │   ├── aws_root_user_activity.py
@@ -230,22 +228,12 @@ from panther_base_helpers import deep_get
 from datetime import datetime, timedelta
 
 def rule(event):
-    # Only process AWS API calls
     if not event.get("eventSource", "").endswith(".amazonaws.com"):
         return False
-
-    # Get the API call details
     event_name = event.get("eventName", "")
     source_ip = deep_get(event, "sourceIPAddress")
     user_agent = deep_get(event, "userAgent")
-
-    # Check for suspicious patterns
-    suspicious_patterns = [
-        "Delete",      # Destructive actions
-        "Terminate",   # Resource termination
-        "Modify",      # Configuration changes
-    ]
-
+    suspicious_patterns = ["Delete", "Terminate", "Modify"]
     return any(pattern in event_name for pattern in suspicious_patterns)
 
 def title(event):
@@ -261,14 +249,17 @@ def reference(event):
     return "https://docs.panther.com/detections/aws_suspicious_api_activity"
 
 def runbook(event):
-    return """
+    return '''
     1. Verify if the API call was authorized
     2. Check the source IP against known good IPs
     3. Review the user agent for anomalies
     4. If unauthorized, revoke the credentials used
-    """
-1. **YAML Metadata** (`rules/aws_suspicious_api_activity.yml`):
+    '''
+```
 
+2. **YAML Metadata** (`rules/aws_suspicious_api_activity.yml`):
+
+```yaml
 AnalysisType: rule
 Enabled: true
 Filename: aws_suspicious_api_activity
@@ -310,38 +301,29 @@ Tests:
         "sourceIPAddress": "192.168.1.1"
       }
     ExpectedResult: false
-
+```
 
 ### Unit Tests (`tests/test_aws_root_user_activity.py`)
+
 ```python
 from rules.aws_root_user_activity import rule
 
 def test_root_user_activity():
-    # Test case 1: Root user activity
     assert rule({
         "eventSource": "iam.amazonaws.com",
-        "userIdentity": {
-            "type": "Root"
-        }
+        "userIdentity": {"type": "Root"}
     }) is True
-    
-    # Test case 2: Non-root user activity
+
     assert rule({
         "eventSource": "iam.amazonaws.com",
-        "userIdentity": {
-            "type": "IAMUser"
-        }
+        "userIdentity": {"type": "IAMUser"}
     }) is False
-    
-    # Test case 3: Non-IAM event
+
     assert rule({
         "eventSource": "ec2.amazonaws.com",
-        "userIdentity": {
-            "type": "Root"
-        }
+        "userIdentity": {"type": "Root"}
     }) is False
 ```
-
 ## CI/CD Integration
 
 Here's how Panther fits into your CI/CD pipeline:
