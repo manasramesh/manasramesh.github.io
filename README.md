@@ -1,54 +1,43 @@
-# Manas Ramesh's Blog
+# Chirpy Starter
 
-Welcome to my personal blog where I share my journey and insights in cybersecurity, cloud security, and DevOps. This blog serves as a knowledge base and a way to document my learning experiences in the ever-evolving world of technology.
+[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
+[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
 
-## About Me
+When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders
+`_data`, `_layouts`, `_includes`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file
+from the theme's gem. If you have ever installed this theme gem, you can use the command
+`bundle info --path jekyll-theme-chirpy` to locate these files.
 
-I'm a security enthusiast with a passion for cloud security, detection engineering, and automation. My focus areas include:
+The Jekyll team claims that this is to leave the ball in the user’s court, but this also results in users not being
+able to enjoy the out-of-the-box experience when using feature-rich themes.
 
-- Cloud Security (AWS, Azure, GCP)
-- Detection as Code
-- Security Operations
-- DevOps and Automation
-- Threat Modeling
-- Security Architecture
+To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your
+Jekyll site. The following is a list of targets:
 
-## Blog Content
+```shell
+.
+├── _config.yml
+├── _plugins
+├── _tabs
+└── index.html
+```
 
-This blog covers various topics in cybersecurity and technology, including:
+To save you time, and also in case you lose some files while copying, we extract those files/configurations of the
+latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
 
-- **Security Operations**: Deep dives into SIEM, detection engineering, and security monitoring
-- **Cloud Security**: Best practices, architecture patterns, and security controls
-- **Threat Modeling**: Practical approaches to identifying and mitigating security risks
-- **Technical Guides**: Step-by-step tutorials and how-to articles
-- **Security Tools**: Reviews and implementation guides for security tools
-- **Career Development**: Insights and advice for security professionals
+## Usage
 
-## Why This Blog?
+Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
 
-I believe in sharing knowledge and learning from the community. This blog is my way of:
+## Contributing
 
-- Documenting my learning journey
-- Sharing practical security insights
-- Contributing to the security community
-- Helping others in their security journey
-
-## Connect With Me
-
-Feel free to reach out and connect:
-
-- [LinkedIn](https://www.linkedin.com/in/manasramesh)
-- [GitHub](https://github.com/manasramesh)
-- [Twitter](https://twitter.com/manasramesh)
-
-## Technical Details
-
-This blog is built using:
-- Jekyll with Chirpy theme
-- GitHub Pages for hosting
-- Markdown for content
-- Mermaid for diagrams
+This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
 
 ## License
 
-All content is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+This work is published under [MIT][mit] License.
+
+[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
+[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
+[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
+[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
