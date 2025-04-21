@@ -1,6 +1,6 @@
 ---
 title: Detection as Code Modernizing Security Operations with Panther SIEM
-date: 2025-04-21 12:30:00 +/-TTTT
+date: 2025-04-21 12:30:00 +0530
 categories: [Security, DevOps, SIEM]
 tags: [detection-as-code, siem, security-operations, devsecops, cicd, panther]
 ---
