@@ -1,6 +1,6 @@
 ---
-title: "Deep Dive into HTTPS: A Comprehensive Guide"
-date: 2023-08-16
+title: Deep Dive into HTTPS A Comprehensive Guide
+date: 2023-08-16 12:30:00 +/-TTTT
 categories: [Security, Networking]
 tags: [https, security, encryption, tls, ssl, cryptography, web-security]
 ---
