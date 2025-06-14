@@ -1,6 +1,6 @@
 ---
 title: Beginner-Friendly SOC Architecture on AWS — A Learning-Focused Prototype
-date: 2024-06-14 12:30:00 +0530
+date: 2025-06-14 12:30:00 +0530
 categories: [Security, AWS, SOC]
 tags: [security-operations, aws, siem, wazuh, suricata, nginx, dvwa, cloudtrail, guardduty, lambda]
 ---
