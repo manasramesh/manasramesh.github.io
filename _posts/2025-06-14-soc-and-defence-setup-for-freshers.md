@@ -1,15 +1,16 @@
 ---
-layout: post
-title: "🛡️ Beginner-Friendly SOC Architecture on AWS — A Learning-Focused Prototype"
+title: Beginner-Friendly SOC Architecture on AWS — A Learning-Focused Prototype
 date: 2025-06-14 12:30:00 +0530
-categories: [cybersecurity, aws, soc, architecture]
-tags: [security, aws, siem, wazuh, suricata, nginx, dvwa, cloudtrail, guardduty, lambda]
+categories: [Security, AWS, SOC]
+tags: [security-operations, aws, siem, wazuh, suricata, nginx, dvwa, cloudtrail, guardduty, lambda]
 author: "MANAS RAMESH"
 description: "Learn SOC architecture concepts with a cost-effective AWS prototype. Perfect for students and security beginners to understand defense-in-depth principles."
 image: /assets/img/aws-soc-architecture.png
 ---
 
-Are you a student or security enthusiast looking to understand how a Security Operations Center (SOC) architecture works? This blog post introduces a **learning-focused, cost-conscious SOC prototype** built on AWS using open-source tools. It's designed to help beginners grasp core security concepts, defense-in-depth principles, and incident response workflows.
+# Beginner-Friendly SOC Architecture on AWS — A Learning-Focused Prototype
+
+Are you a student or security enthusiast looking to understand how a Security Operations Center (SOC) architecture works? This deep dive introduces a **learning-focused, cost-conscious SOC prototype** built on AWS using open-source tools. It's designed to help beginners grasp core security concepts, defense-in-depth principles, and incident response workflows.
 
 > ⚠️ **Important Disclaimer**: This is a **learning prototype**, not a production-ready or industry-standard architecture. It's specifically designed for beginners to understand SOC concepts in a cost-effective way. Do not use this design for production environments without significant security hardening and professional review.
 
