@@ -3,9 +3,6 @@ title: Beginner-Friendly SOC Architecture on AWS — A Learning-Focused Prototyp
 date: 2025-06-14 12:30:00 +0530
 categories: [Security, AWS, SOC]
 tags: [security-operations, aws, siem, wazuh, suricata, nginx, dvwa, cloudtrail, guardduty, lambda]
-author: "MANAS RAMESH"
-description: "Learn SOC architecture concepts with a cost-effective AWS prototype. Perfect for students and security beginners to understand defense-in-depth principles."
-image: /assets/img/aws-soc-architecture.png
 ---
 
 # Beginner-Friendly SOC Architecture on AWS — A Learning-Focused Prototype
